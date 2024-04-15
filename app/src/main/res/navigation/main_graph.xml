@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.example.boycott.core.ui.fragment.scanner.ScannerFragment"
+        android:label="fragment_scanner"
+        tools:layout="@layout/fragment_scanner" />
+    <fragment
+        android:id="@+id/productsTypeFragment"
+        android:name="com.example.boycott.core.ui.fragment.type.ProductsTypeFragment"
+        android:label="fragment_products_type"
+        tools:layout="@layout/fragment_products_type" >
+        <action
+            android:id="@+id/action_productsTypeFragment_to_boycottProductsFragment"
+            app:destination="@id/boycottProductsFragment" />
+        <action
+            android:id="@+id/action_productsTypeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boycottProductsFragment"
+        android:name="com.example.boycott.core.ui.fragment.boycott.BoycottProductsFragment"
+        android:label="fragment_boycott_products"
+        tools:layout="@layout/fragment_boycott_products" >
+        <action
+            android:id="@+id/action_boycottProductsFragment_to_productsTypeFragment"
+            app:destination="@id/productsTypeFragment" />
+        <argument
+            android:name="categoryID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.boycott.core.ui.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_scannerFragment"
+            app:destination="@id/scannerFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_productsTypeFragment"
+            app:destination="@id/productsTypeFragment" />
+    </fragment>
+</navigation>

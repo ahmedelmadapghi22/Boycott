@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Boycott</string>
+    <string name="enter_barcode_here">Enter barcode here</string>
+    <string name="search">Search</string>
+    <string name="in_boycott">In Boycott</string>
+    <string name="out_boycott">Out Boycott</string>
+    <string name="unknown_barcode">Please scan qr or enter barcode</string>
+    <string name="Safety">Safety Products</string>
+    <string name="boycott">Boycott</string>
+    <string name="scanner">Scanner</string>
+    <string name="products">Products</string>
+</resources>

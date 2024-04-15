@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".core.ui.fragment.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/tvTitleBoycott"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/hala_font"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/boycott"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_30ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardScanner"
+        style="@style/CardHomeStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardProducts"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleBoycott"
+        app:layout_constraintVertical_bias="0.29000002">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnScanner"
+            style="@style/TextButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/scanner"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:background="@android:color/transparent"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProducts"
+        style="@style/CardHomeStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.29000002"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardScanner"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleBoycott">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnProducts"
+            android:background="@android:color/transparent"
+            style="@style/TextButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/products"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

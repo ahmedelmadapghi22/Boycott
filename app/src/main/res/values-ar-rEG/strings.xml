@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مقاطعة</string>
+    <string name="enter_barcode_here">أدخل الباركود</string>
+    <string name="search">بحث</string>
+    <string name="in_boycott">مقاطعة</string>
+    <string name="out_boycott">سليم</string>
+    <string name="unknown_barcode">يرجى مسح QR أو إدخال الرمز الشريطي</string>
+    <string name="Safety">المنتجات الأمانة</string>
+    <string name="boycott">مقاطعين</string>
+    <string name="scanner">Scanner</string>
+    <string name="products">Products</string>
+</resources>
